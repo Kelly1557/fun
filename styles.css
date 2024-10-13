@@ -1,0 +1,183 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* dark grey background */
+    color: white; /* light text color for contrast */
+}
+
+header {
+    background-color: #007acc; /* Blue header */
+    padding: 20px;
+    text-align: center;
+}
+
+.banner h1 {
+    color: silver; /* Silver text for the banner */
+    font-size: 24px; /* Adjust size as necessary */
+}
+
+.main {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about-main {
+    color: #000; /* Ensure about-main text is black */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Space above buttons */
+}
+
+.button {
+    background-color: #e6e6e6; /* Silver button color */
+    color: #007acc; /* Blue text for buttons */
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+    .button:hover {
+        background-color: #007acc; /* Change background on hover */
+        color: white; /* Change text color on hover */
+    }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007acc; /* Blue footer */
+    color: silver; /* Silver footer text */
+    position: relative; /* Keep footer at bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+.media-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap to the next line */
+    justify-content: center; /* Centers the images */
+    gap: 10px; /* Space between images */
+}
+
+.media-image {
+    max-width: 200px; /* Limit image size */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #007acc; /* Optional border for aesthetics */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.video-gallery {
+    display: flex;
+    flex-direction: column; /* Stack videos vertically */
+    align-items: center; /* Center the videos */
+    gap: 20px; /* Space between videos */
+}
+
+.media-video {
+    width: 100%;
+    max-width: 600px; /* Limit video size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.photo-container {
+    text-align: center; /* Center the image */
+    margin: 20px 0; /* Add space above and below */
+}
+
+.centered-photo {
+    max-width: 40%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #007acc; /* Optional border for aesthetics */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.image-wrapper, .video-wrapper {
+    position: relative; /* Position relative for overlay */
+    display: inline-block; /* Keep items inline */
+    margin: 10px; /* Add space between items */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white; /* Text color */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    padding: 10px; /* Add padding */
+}
+
+.image-wrapper:hover .overlay, .video-wrapper:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.media-image, .media-video {
+    max-width: 200px; /* Limit image/video size */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #007acc; /* Optional border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.suspect-details {
+    margin: 20px; /* Space around the section */
+    padding: 15px; /* Inner space */
+    background-color: #f2f2f2; /* Light background for contrast */
+    border-radius: 5px; /* Rounded corners */
+}
+
+    .suspect-details h2 {
+        color: #007acc; /* Color for headings */
+    }
+
+    .suspect-details p, .suspect-details ul {
+        font-family: Arial, sans-serif; /* Ensure font is consistent */
+        color: #000; /* Set text color to black for better contrast */
+    }
+
+.video-wrapper {
+    position: relative; /* Allow absolute positioning of the overlay */
+    display: inline-block; /* Keeps videos inline */
+    margin: 10px; /* Adds space around videos */
+}
+
+    .video-wrapper .overlay {
+        position: absolute; /* Position overlay on top of video */
+        bottom: 0; /* Position it at the bottom */
+        left: 0; /* Align to the left */
+        right: 0; /* Stretch to the right */
+        background-color: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
+        color: white; /* White text color */
+        padding: 5px; /* Padding inside overlay */
+        opacity: 0; /* Start hidden */
+        transition: opacity 0.3s; /* Smooth fade */
+        max-height: 80px;
+        overflow-y: auto; /* Allow scrolling if needed */
+    }
+
+    .video-wrapper:hover .overlay {
+        opacity: 1; /* Show overlay on hover */
+        max-height: 100px; /* Set a max height to avoid cutting off text */
+    }
+
+.suspect-details p,
+.suspect-details h2 {
+    color: #000; /* Black color for suspect descriptions */
+}
